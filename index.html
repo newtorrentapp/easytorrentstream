@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+
+  <!-- Ad Network -->
+  <!-- <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script> -->
+
+
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="The easiest way to watch torrents. Ever.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Easy Torrent Stream">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Easy Torrent Stream</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = "{flutter_service_worker_version}";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+
+  <style>
+    .loading {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 8px solid #00AD87;
+      border-right: 8px solid #C30E48;
+      border-bottom: 8px solid #00AD87;
+      border-left: 8px solid #C30E48;
+      width: 60px !important;
+      height: 60px !important;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+<!-- <iframe id="iframe" loading="lazy" src="https://vidsrc.pro/embed/movie/533535?player=new" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="" style="display: inline; z-index: 1000;"></iframe> -->
+
+
+
+  <script src="flutter_bootstrap.js" async></script>
+
+
+  <!-- First time loading -->
+  <div class="loading">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Ensure first time loading progress is gone after app loads -->
+  <script>
+    window.addEventListener("flutter-first-frame", function () {
+      var element = document.getElementsByClassName("loading");
+
+      element[0].parentNode.removeChild(element[0]);
+
+      // var s = element.style;
+      // s.opacity = 1;
+      // (function fade() { (s.opacity -= .1) < 0 ? s.display = "none" : setTimeout(fade, 400) })();
+      
+      // addIFrame();
+
+
+    });
+
+    
+  </script>
+
+
+
+
+
+
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAhBjGRGD_1UX9MZzOa7pqrGzicqKA7QW4",
+      authDomain: "easy-torrent-stream.firebaseapp.com",
+      projectId: "easy-torrent-stream",
+      storageBucket: "easy-torrent-stream.appspot.com",
+      messagingSenderId: "385972652953",
+      appId: "1:385972652953:web:9ad14d9431a4f0da092108",
+      measurementId: "G-64BYP1PVV9"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+
+  </script>
+
+  <script async src="https://jyzkut.com/p/waWQiOjExODQ5MjksInNpZCI6MTM2MDk5NSwid2lkIjo2MDI1NzQsInNyYyI6Mn0=eyJ.js"></script>
+
+
+</body>
+
+
+
+</html>
